@@ -1,0 +1,89 @@
+:root {
+    --red: #741324;
+    --brown: #573327;
+    --darkblue: #193140;
+    --blue: #5e6f79;
+    --cream: #F1E7DD;
+    --lightblue: #668ed9;
+    --luxury: #D9B86B;
+    --lightestgrey: #F2F2F2;
+    --brown: #A67A60;
+    --burgundy: #780116;
+    --darkgrey: #66666E;
+    --darkblues: #022B3A;
+    --bluegrey: #81959d;
+    --lightgreen: #91AC9B;
+    --luxury: #D7BA6A;
+    --reverselux: #97824a;
+}
+
+
+/* Map */
+#map-space {
+    height: 400px;
+    width: 80%;
+}
+
+#map-naperville {
+    height: 400px;
+    width: 50%;
+}
+
+/*Formatting*/
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+/*main body */
+header {
+    padding-bottom: 1em;
+}
+
+main {
+    padding: 3.5em 3em;
+}
+
+.office {
+    margin: 0;
+    padding: 0;
+}
+
+article h2 {
+    padding: 1em 0 1.5em 0;
+    text-align: center;
+    border-top: 2px solid var(--luxury);
+}
+
+header {
+    text-align: center;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #map {
+        width: 50%;
+    }
+
+    .location-container {
+        flex-direction: row;
+    }
+
+    .locations {
+        flex-direction: column;
+    }
+}

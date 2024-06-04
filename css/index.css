@@ -1,0 +1,313 @@
+:root {
+    --red: #741324;
+    --brown: #573327;
+    --darkblue: #193140;
+    --blue: #5e6f79;
+    --cream: #F1E7DD;
+    --lightblue: #668ed9;
+    --luxury: #D9B86B;
+    --mediumgrey: #636363;
+    --lightergrey: #bbbbbb;
+    --brown: #A67A60;
+    --burgundy: #780116;
+    --darkgrey: #66666E;
+    --darkblues: #022B3A;
+    --bluegrey: #81959d;
+    --lightgreen: #91AC9B;
+    --luxury: #D7BA6A;
+    --reverselux: #97824a;
+    --darkgreen: #355144;
+
+}
+
+/* general */
+article {
+    padding: 2em;
+}
+
+h1 {
+    text-align: right;
+}
+
+/* headline */
+.headline {
+    background: left/cover url('../img/gavel-light.jpeg');
+    height: 500px;
+    color: white;
+}
+
+.headline-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5em;
+    padding: 12em 1em 0 2em;
+    color: black;
+    text-shadow: 1px 1px 2px white;
+    /* background-color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    float: right;
+    height: 388px; */
+}
+
+.headline-body h1 {
+    text-align: right;
+}
+
+.subtag {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*practice areas*/
+.card {
+    /* border: 2px solid black; */
+    border-radius: 4px;
+    background-color: white;
+    height: 150px;
+    padding: 1.5em 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--luxury);
+    line-height: 1em;
+    margin-top: 1.5em;
+}
+
+
+
+.practice-areas {
+    padding: 5em 3em 2em;
+    line-height: 1.5em;
+}
+
+.practice-areas a {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+
+}
+
+.owl-carousel .owl-theme {
+    width: 50%;
+}
+
+/*home content*/
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2em;
+    background-color: var(--darkgreen);
+    padding: 4em 3em;
+}
+
+.home-content img {
+    height: 300px;
+    width: 100%;
+}
+
+.home-content div {
+    line-height: 1.5em;
+}
+
+.home-content h3 {
+    text-align: center;
+    color: white;
+    /* Black text color */
+    text-shadow: 1px 1px 4px black;
+}
+
+.home-content p {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+
+/*why randy */
+.randy {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.randy img {
+    height: 200px;
+}
+
+.why-text p {
+    font-size: 16px;
+}
+
+.why-text ul {
+    padding: 0;
+    line-height: 1.5em;
+}
+
+.why-text li {
+    font-size: 14px;
+}
+
+.why-text {
+    padding: 0 4em 0 2em;
+}
+
+/*Reviews */
+.review-container {
+    border-top: 7px double var(--luxury);
+    margin-top: 3em;
+    padding: 4em 4em 5em;
+}
+
+.review-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+
+}
+
+.review-article p {
+    font-size: 14px;
+}
+
+
+#mobile-hide {
+    display: none;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    height: 320px;
+}
+
+.review p {
+    line-height: 1.5em;
+    color: var(--mediumgrey);
+}
+
+.stars {
+    color: var(--luxury);
+}
+
+
+
+
+/*
+    MEDIA QUERIES
+*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #mobile-hide {
+        display: flex;
+    }
+
+    .tablet-hide {
+        display: none;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 5px;
+        width: calc(50% - 1em);
+        margin-top: 1em;
+        padding: 0.5em 1em;
+        height: 300px;
+    }
+
+    .headline-body {
+        padding: 5em 2em 0 0;
+    }
+
+    .randy {
+        align-items: center;
+    }
+
+    .randy img {
+        width: 55%;
+        margin-top: 2em;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .review {
+        width: calc(33.33% - 1em);
+    }
+
+    .headline-body {
+        padding: 5em 5.5em 0 0;
+    }
+
+    .headline-body h1 {
+        font-size: 48px;
+    }
+
+    .headline-body p {
+        font-size: 22px;
+    }
+
+    .headline-body button {
+        font-size: 16px;
+    }
+
+    .why-text h2 {
+        font-size: 42px;
+    }
+
+    .why-text p {
+        font-size: 20px;
+    }
+
+    .why-text li {
+        font-size: 17px;
+    }
+
+    .randy {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .randy img {
+        margin-top: 2em;
+        height: 350px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    .home-content {
+        flex-direction: row;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

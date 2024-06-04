@@ -1,0 +1,98 @@
+/* General */
+ul {
+    list-style: none;
+}
+
+:root {
+    --red: #741324;
+    --brown: #573327;
+    --darkblue: #193140;
+    --blue: #5e6f79;
+    --cream: #F1E7DD;
+    --lightestgrey: #d2d2d2;
+    --grey: #ededed;
+    --luxury: #D7BA6A;
+    --reverselux: #97824a;
+    --darkgreen: #355144;
+}
+
+/* 4C7361 */
+
+/*Fonts*/
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "DM Serif Display", serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-size: 38px;
+    text-shadow: 1px 1px 2px white;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 1em;
+    text-shadow: 0.5px 0.5px 1px white;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+p,
+figcaption,
+li,
+a,
+button,
+label,
+input {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--grey);
+}
+
+button {
+    padding: 1em 2em;
+    background-color: var(--luxury);
+    border-radius: 5px;
+    border: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: var(--reverselux);
+    color: white;
+}
+
+img {
+    border-radius: 5px;
+}

@@ -1,0 +1,156 @@
+:root {
+    --red: #741324;
+    --brown: #573327;
+    --darkblue: #193140;
+    --blue: #5e6f79;
+    --cream: #F1E7DD;
+    --lightblue: #668ed9;
+    --luxury: #D9B86B;
+    --lightestgrey: #F2F2F2;
+    --brown: #A67A60;
+    --burgundy: #780116;
+    --darkgrey: #66666E;
+    --darkblues: #022B3A;
+    --bluegrey: #81959d;
+    --lightgreen: #91AC9B;
+    --darkgreen: #496257;
+    --luxury: #D7BA6A;
+    --reverselux: #97824a;
+    --lighterdarkgreen: #86978f;
+}
+
+/* General */
+
+h1 {
+    text-align: left;
+}
+
+
+p {
+    line-height: 2em;
+}
+
+article {
+    padding: 1em 2em;
+}
+
+
+/*Headline */
+
+.tag {
+    color: var(--luxury);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 3em 2em 2em 2em;
+    padding: 2em 1em;
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* .about-text {
+    width: 50%;
+} */
+
+.about-text p {
+    font-size: 12px;
+}
+
+.about-text h1 {
+    font-size: 28px;
+}
+
+/*Get in touch */
+.get-in-touch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+    background-color: white;
+    margin: 2em 4em;
+    border-radius: 4px;
+}
+
+.get-in-touch button {
+    padding: 1em 2em;
+}
+
+/*
+    MEDIA QUERIES
+*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .about {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .about-text {
+        width: 50%;
+    }
+
+    .about img {
+        width: 50%;
+    }
+
+    .about h1 {
+        font-size: 36px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .get-in-touch {
+        padding: 1em 2em;
+        width: 50%;
+        margin-left: 10em;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .get-in-touch {
+        margin-left: 15em;
+    }
+
+    .about img {
+        height: 300px;
+        width: 40%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+
+
+
+/*
+    MEDIA QUERIES
+*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

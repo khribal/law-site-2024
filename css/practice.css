@@ -1,0 +1,158 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em 0 5em;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0 0 4em;
+}
+
+.card {
+    /* width: calc(50% - 5em); */
+    height: 150px;
+    background-color: white;
+    margin: 1em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+    text-shadow: 3px 3px 5px white;
+}
+
+.white {
+    color: white;
+    /* Black text color */
+    text-shadow: 3px 3px 5px black;
+}
+
+/* Background images for cards */
+.realestate {
+    background: center/cover url(../img/practice-areas/realestate.jpeg);
+}
+
+.elder {
+    background: center/cover url(../img/practice-areas/elderly.jpeg);
+}
+
+.criminal {
+    background: right/cover url(../img/practice-areas/criminal3.jpeg);
+}
+
+.bankruptcy {
+    background: right/cover url(../img/practice-areas/bankruptcy.jpeg);
+
+}
+
+.estateplanning {
+    background: center/cover url(../img/practice-areas/estateplan.jpeg);
+}
+
+.personal {
+    background: right/cover url(../img/practice-areas/injury\ \(2\).jpeg);
+}
+
+.family {
+    background: center/cover url(../img/practice-areas/family.jpeg);
+
+}
+
+.traffic {
+    background: left/cover url(../img/practice-areas/traffic.jpeg);
+
+}
+
+
+/*Hover for links */
+.card:hover {
+    /* opacity: 50%; */
+}
+
+h5:link {
+    color: white;
+}
+
+h5:visited {
+    color: white;
+}
+
+/* Hover effect */
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.3.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+ */
+/* 2D TRANSITIONS */
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Shrink */
+.hvr-shrink {
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-shrink:hover,
+.hvr-shrink:focus,
+.hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.card:link {
+    text-decoration: none;
+}
+
+/*
+    MEDIA QUERIES
+*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .card {
+        width: calc(40% - 2em);
+    }
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

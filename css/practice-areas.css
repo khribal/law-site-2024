@@ -1,0 +1,239 @@
+:root {
+    --red: #741324;
+    --brown: #573327;
+    --darkblue: #193140;
+    --blue: #5e6f79;
+    --cream: #F1E7DD;
+    --lightblue: #668ed9;
+    --luxury: #D9B86B;
+    --lightestgrey: #F2F2F2;
+    --brown: #A67A60;
+    --burgundy: #780116;
+    --darkgrey: #66666E;
+    --darkblues: #022B3A;
+    --bluegrey: #81959d;
+    --lightgreen: #91AC9B;
+    --darkgreen: #496257;
+    --luxury: #D7BA6A;
+    --reverselux: #97824a;
+    --lighterdarkgreen: #86978f;
+}
+
+/* Headers */
+.bank {
+    background: right/cover url(../img/practice-areas/bankruptcy.jpeg);
+}
+
+.criminal {
+    background: right/cover url(../img/practice-areas/crimnal-head.jpeg);
+}
+
+.elder {
+    background: right/cover url(../img/practice-areas/elderhead2.jpeg);
+}
+
+.estate {
+    background: right/cover url(../img/practice-areas/estateheader2.jpeg);
+}
+
+.family {
+    background: right/cover url(../img/practice-areas/family.jpeg);
+}
+
+.injury {
+    background: right/cover url(../img/practice-areas/injuryheader.jpeg);
+}
+
+.realestate {
+    background: right/cover url(../img/practice-areas/realestate.jpeg);
+}
+
+.traffic {
+    background: right/cover url(../img/practice-areas/traffichead.jpeg);
+}
+
+header {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding-left: 4em;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-weight: bold;
+}
+
+
+/*first article */
+.first-art h2 {
+    font-size: 28px;
+}
+
+.first-art p {
+    font-size: 14px;
+}
+
+.first-art {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--luxury);
+}
+
+
+/*Checklist*/
+body>article:nth-of-type(2) {
+    padding: 0 0 0 2em;
+}
+
+body>article:nth-of-type(2) h3 {
+    font-size: 24px;
+}
+
+.checkitem {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.checkitem p,
+i {
+    padding-top: 0.7em;
+    margin: 0;
+}
+
+.checkitem p {
+    margin-left: 0.5em;
+}
+
+article {
+    margin: 2em 1em;
+    padding: 2em 2em 3em;
+    line-height: 1.5em;
+}
+
+article h4 {
+    font-size: 20px;
+}
+
+/*Resources */
+.resource-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+}
+
+.resource {
+    /* width: 33%; */
+    margin: 1.5em 0.5em 0;
+    background-color: white;
+}
+
+.resource img {
+    width: 100%;
+    border-radius: 0;
+    height: 200px;
+}
+
+/* .before-text {
+    padding: 1em;
+}
+
+.before-text h6,
+p {
+    padding: 1.5em 0 0 1em;
+} */
+
+.resource-text {
+    /* text-align: center; */
+    padding: 2em 0 0 1em;
+}
+
+.before-text a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em 2em;
+    text-align: center;
+}
+
+.before-text button {
+    width: 45%;
+    margin-top: auto;
+}
+
+/*Hover resource card*/
+.before-text a:link {
+    color: black;
+}
+
+.before-text a:hover {
+    color: var(--luxury);
+    font-weight: bold;
+}
+
+.before-text button:link {
+    color: black;
+    background-color: var(--luxury);
+}
+
+.before-text button:hover {
+    border: 2px solid var(--luxury);
+    background-color: white;
+    color: black;
+}
+
+/*
+    MEDIA QUERIES
+*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .resource {
+        width: 33%;
+        justify-content: space-between;
+    }
+
+    .resource-container {
+        flex-direction: row;
+    }
+
+    .resource button {
+        padding: 1em 2em;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .resource-text h4 {
+        font-size: 18px;
+    }
+
+    .resource-text p {
+        font-size: 12px;
+    }
+
+    body>article:nth-of-type(2) h3 {
+        font-size: 28px;
+    }
+
+    .first-art h2 {
+        font-size: 34px;
+    }
+
+    .first-art p {
+        font-size: 18px;
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header {
+        height: 400px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

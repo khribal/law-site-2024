@@ -1,0 +1,215 @@
+:root {
+    --red: #741324;
+    --brown: #573327;
+    --darkblue: #193140;
+    --blue: #5e6f79;
+    --cream: #F1E7DD;
+    --lightblue: #668ed9;
+    --luxury: #D9B86B;
+    --lightestgrey: #F2F2F2;
+    --brown: #A67A60;
+    --burgundy: #780116;
+    --darkgrey: #66666E;
+    --darkblues: #022B3A;
+    --bluegrey: #81959d;
+    --lightgreen: #91AC9B;
+    --darkgreen: #496257;
+    --luxury: #D7BA6A;
+    --reverselux: #97824a;
+    --lighterdarkgreen: #86978f;
+}
+
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* UTILITIES */
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*logo */
+.nav-logo {
+    height: 75px;
+    padding: 0;
+    margin: 0;
+}
+
+#mobile-hide {
+    display: none;
+}
+
+/****Top navigation******/
+
+
+.nav-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #355144;
+    color: black;
+    margin: 0;
+    padding: 0 2em;
+}
+
+.logo-container {
+    display: flex;
+}
+
+.nav-contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+i {
+    font-size: 18px;
+}
+
+.nav-contact-container h3 {
+    text-shadow: none;
+}
+
+
+
+/* NAVIGATION */
+nav {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(128, 128, 128, 0.3);
+    /* sticky: fix menu to top of viewport, PUSHES content down */
+    position: sticky;
+    /* fixed: fixes menu to top of viewport, APPEARS OVER content */
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    /* Width will need to be set to 100% when setting position */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    /* menu items aligned horiz and to the right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    /* remove bullet points */
+    list-style-type: none;
+    padding: 1.5rem;
+}
+
+nav a {
+    /* remove underline */
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    /* menu items need to act like links */
+    color: var(--luxury);
+}
+
+
+.menu-button {
+    /* menu bars hidden to start */
+    display: none;
+    padding: 1.5rem;
+}
+
+.menu-button:hover {
+    /* menu bars need to act like a button */
+    color: var(--luxury);
+    cursor: pointer;
+}
+
+/* in mobile view... */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .menu-button {
+        /* turn on */
+        display: block;
+        visibility: visible;
+    }
+
+    .menu-item {
+        /* turn off */
+        /* display: none; */
+
+        /* turn off in another way in order to add transition */
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s linear;
+
+        /* some styling when in dropdown mode */
+        background-color: white;
+        border-bottom: 2px double var(--luxury);
+        text-align: right;
+        width: 100%;
+    }
+}
+
+.dropdown {
+    /* class to add to show hidden menu items on click */
+    display: block;
+    /* add transition */
+    position: static;
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .nav-top {
+        justify-content: space-between;
+    }
+
+    #mobile-hide {
+        display: flex;
+    }
+
+    .nav-top button {
+        padding: 1em 2em;
+    }
+}
